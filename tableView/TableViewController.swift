@@ -14,10 +14,10 @@ class TableViewController: UITableViewController {
 //    var arraySurname = ["Tudyk", "Wetterlund", "Reynolds", "Bowen", "Tomko"]
 //    var arrayImages = ["alan", "alice", "corey", "elizabeth", "sara"]
      
-    var arrayPerson = [Person(name: "Alan", surname: "Tudyk", image: "alan"),
-        Person(name: "Alice", surname: "Wetterlund", image: "alice"),
-        Person(name: "Corey", surname: "Reynolds", image: "corey"),
-        Person(name: "Elizabeth", surname: "Bowen", image: "elizabeth")]
+    var arrayPerson = [Person(name: "Alan", surname: "Tudyk", profession: "actor", image: "alan"),
+        Person(name: "Alice", surname: "Wetterlund", profession: "actress", image: "alice"),
+        Person(name: "Corey", surname: "Reynolds", profession: "actor", image: "corey"),
+        Person(name: "Elizabeth", surname: "Bowen", profession: "actress", image: "elizabeth")]
     
     
 
@@ -64,10 +64,10 @@ class TableViewController: UITableViewController {
             let label = cell.viewWithTag(1001) as! UILabel
             label.text = arrayPerson[indexPath.row].name
             
-            let labelSurname = cell.viewWithTag(1002) as! UILabel
-            labelSurname.text = arrayPerson[indexPath.row].surname
+            //let labelSurname = cell.viewWithTag(1002) as! UILabel
+            //labelSurname.text = arrayPerson[indexPath.row].surname
 
-            let imageView = cell.viewWithTag(1003) as! UIImageView
+            let imageView = cell.viewWithTag(1004) as! UIImageView
             imageView.image =  UIImage(named: arrayPerson[indexPath.row].image)
              
 
@@ -80,10 +80,10 @@ class TableViewController: UITableViewController {
         let label = cell.viewWithTag(1001) as! UILabel
         label.text = arrayPerson[indexPath.row].name
         
-        let labelSurname = cell.viewWithTag(1002) as! UILabel
-        labelSurname.text = arrayPerson[indexPath.row].surname
+        //let labelSurname = cell.viewWithTag(1002) as! UILabel
+        //labelSurname.text = arrayPerson[indexPath.row].surname
 
-        let imageView = cell.viewWithTag(1003) as! UIImageView
+        let imageView = cell.viewWithTag(1004) as! UIImageView
         imageView.image =  UIImage(named: arrayPerson[indexPath.row].image)
          
 

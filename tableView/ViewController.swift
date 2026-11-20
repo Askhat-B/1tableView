@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var surnameLabel: UILabel!
     
+    @IBOutlet weak var professionLabel: UILabel!
+    
+    
     var person = Person()
     
     override func viewDidLoad() {
@@ -25,6 +28,7 @@ class ViewController: UIViewController {
         
         nameLabel.text = person.name
         surnameLabel.text = person.surname
+        professionLabel.text = person.profession
         imageView.image = UIImage(named: person.image)
     }
 

@@ -11,5 +11,6 @@ struct Person
 {
     var name = ""
     var surname = ""
+    var profession = ""
     var image = ""
 }
